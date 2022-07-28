@@ -4,13 +4,15 @@ import sys
 sys.path.append('App/Models')
 from Person import Person
 
+dataPath = "App/Resources/data.txt"
+
 class FileReader:
     def __init__(self):
         self.persons = []
         self._chargeData()
 
     def _chargeData(self):
-        rows = self._readFile("App/Resources/data.txt")
+        rows = self._readFile(dataPath)
 
         for row in rows:
             line = row.split('=')
