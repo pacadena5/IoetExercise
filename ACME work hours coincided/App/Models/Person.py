@@ -12,7 +12,7 @@ class Person:
                 var = -1
             else:
                 bool = True
-        
+                break   
         return bool
 
     def indexDay(self, day):

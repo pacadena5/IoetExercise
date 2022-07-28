@@ -20,19 +20,14 @@ class WorkHoursController:
         days = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"]
         hoursCoincided = 0
         for day in days:
-            #dayIndex = days.index(day)
-            #print("index>>"+ dayIndex.__str__())
 
             if( p1.haveDay(day) and p2.haveDay(day)):       #Compare the hours if they work the same day
                 p1WeekIndex = p1.indexDay(day)
-                """ print("el indice en el for>")
-                print(p1WeekIndex) """
                 p2WeekIndex = p2.indexDay(day)
 
                 if (self.compareHours(p1.week[p1WeekIndex][1], p2.week[p2WeekIndex][1])):
                     hoursCoincided+=1
-        """ print("HORAS COINCIDIDAS")
-        print(hoursCoincided) """
+
         return hoursCoincided
 
     def compareHours(self, hoursWorked1, hoursWorked2):

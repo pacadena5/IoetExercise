@@ -16,8 +16,7 @@ class FileReader:
             line = row.split('=')
             name = line[0]
             week = self._reedWeek(line[1])
-            print("name > "+name)
-            print(week)
+
             self.persons.append(Person(name,week))
         
     def _reedWeek(self, strWeek):   #separating days('MO') and the hours worked('12:00-15:00')
@@ -39,6 +38,8 @@ class FileReader:
             line = file.readline()
         
         file.close()
+        if(len(rows)==0):
+            print("File empty, check Resuerces/data.txt")
         return rows
 
     def getPersons(self):
