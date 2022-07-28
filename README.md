@@ -5,7 +5,7 @@ I have performed the exercise in python.
 1. Open a terminal in the folder
 2. Navigate to the solution folder "ACME work hours coincided" with 'cd ACME work hours coincided' or alternative
 you can directly open a terminal here
-3. Execute the command "python .\App\main.py" and the app its running
+3. Execute the command "python .\App\main.py" and the app start running
 
 # Methodology / Approach
 I have focused on reading the data and separating that from the matching hours comparison algorithm.
