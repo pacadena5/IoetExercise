@@ -4,16 +4,16 @@ class Person:
         self.week = week
 
     def haveDay(self, day):
-        bool = False
+        band = False
         for dayPerson in self.week:
             try:
-                var = dayPerson.index(day)
+                dayPerson.index(day)
             except:
-                var = -1
+                continue #controlled exception
             else:
-                bool = True
+                band = True
                 break   
-        return bool
+        return band
 
     def indexDay(self, day):
         i = 0

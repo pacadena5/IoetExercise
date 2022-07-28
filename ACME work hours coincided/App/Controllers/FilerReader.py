@@ -34,7 +34,7 @@ class FileReader:
         rows = []
         file  = open(fileName,'r')
         line = file.readline()
-        while not(line==''):
+        while (line!=''):
             line  = line.strip('\n')
             rows.append(line)       
             line = file.readline()

@@ -17,7 +17,7 @@ class ModelsTest(unittest.TestCase):
         self.assertEqual('01:00-03:00', per.week[per.indexDay('TH')][1])
 
     def test_readingHours(self):
-        h = LaborHour('10:00-12:25') #todo
+        h = LaborHour('10:00-12:25')
         self.assertEqual(h.hourIn.hour, 10) #Reading start hour
         self.assertEqual(h.hourIn.min, 00) #Reading start min
         self.assertEqual(h.hourOut.hour, 12) #Reading end hour
