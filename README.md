@@ -8,7 +8,7 @@ you can directly open a terminal here
 3. Execute the command "python .\App\main.py" and the app start running
 
 # Methodology / Approach
-I have focused on reading the data and separating that from the matching hours comparison algorithm.
+I focused on separating the process of reading data and the matching hours comparison algorithm.
 First I declare my models, which are: Person to manage the information, Hour for the comparisons and 
 LaborHour to manage the hours. Then I create my controllers which are: FileReader to read the data, 
 HoursChecker to manage the hours and compare them, and WorkHoursController to execute the algorithm 
